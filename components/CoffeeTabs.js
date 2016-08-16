@@ -20,7 +20,7 @@ class CoffeTabs extends Component {
   constructor() {
     super();
     this.state = {
-      selectedTab: 'chemexTab',
+      selectedTab: 'frenchTab',
       ounces: '0',
       firstPour: '',
       water: '',

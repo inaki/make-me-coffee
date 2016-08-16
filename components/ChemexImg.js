@@ -5,14 +5,6 @@ import {
   StyleSheet
 } from 'react-native';
 
-class ChemexImg extends Component {
-  render() {
-    return (
-      <Image style={styles.device} source={require(`./img/chemexEmpty.png`)}/>
-    );
-  }
-}
-
 const styles = StyleSheet.create({
   device: {
     width: 90,
