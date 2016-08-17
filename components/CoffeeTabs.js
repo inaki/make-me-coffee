@@ -13,7 +13,6 @@ import {
   Text,
   Image,
   TabBarIOS,
-  TouchableHighlight,
   TouchableWithoutFeedback,
   View
 } from 'react-native';
@@ -91,9 +90,9 @@ class CoffeTabs extends Component {
             <TouchableWithoutFeedback onPress={dismissKeyboard}>
               <View style={styles.whole}>
                 <View style={styles.infoBtn}>
-                <TouchableHighlight onPress={() => this.props.navigator.push({id: 'info'})}>
+                <TouchableWithoutFeedback onPress={() => this.props.navigator.push({id: 'info'})}>
                   <Image style={styles.btn} source={require('./img/mugIcon.png')}/>
-                </TouchableHighlight>
+                </TouchableWithoutFeedback>
                 </View>
                 <View style={styles.greenCircle}>
                   <FrenchImg fill={this.state.fill}/>
@@ -117,9 +116,9 @@ class CoffeTabs extends Component {
             <TouchableWithoutFeedback onPress={dismissKeyboard}>
               <View style={styles.whole}>
                 <View style={styles.infoBtn}>
-                  <TouchableHighlight onPress={() => this.props.navigator.push({id: 'info'})}>
+                  <TouchableWithoutFeedback onPress={() => this.props.navigator.push({id: 'info'})}>
                     <Image style={styles.btn} source={require('./img/mugIcon.png')}/>
-                  </TouchableHighlight>
+                  </TouchableWithoutFeedback>
                 </View>
                 <View style={styles.greenCircle}>
                   <ChemexImg fill={this.state.fill}/>
@@ -142,9 +141,9 @@ class CoffeTabs extends Component {
             <TouchableWithoutFeedback onPress={dismissKeyboard}>
               <View style={styles.whole}>
                 <View style={styles.infoBtn}>
-                <TouchableHighlight onPress={() => this.props.navigator.push({id: 'info'})}>
+                <TouchableWithoutFeedback onPress={() => this.props.navigator.push({id: 'info'})}>
                   <Image style={styles.btn} source={require('./img/mugIcon.png')}/>
-                </TouchableHighlight>
+                </TouchableWithoutFeedback>
                 </View>
                 <View style={styles.greenCircle}>
                   <DripImg fill={this.state.fill}/>

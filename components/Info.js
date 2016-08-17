@@ -15,7 +15,9 @@ class Info extends Component {
       <ScrollView style={styles.infoContent}>
 
       <TouchableWithoutFeedback style={styles.button} onPress={() => this.props.navigator.pop()}>
-        <Image style={styles.closeBtn} source={require('./img/backBtn.png')}/>
+        <View style={styles.backBtnView}>
+          <Image style={styles.backBtn} source={require('./img/backBtn.png')}/>
+        </View>
       </TouchableWithoutFeedback>
 
         <Text style={styles.mainTitle}> Brewing Info </Text>
@@ -61,17 +63,22 @@ class Info extends Component {
 }
 
 const styles = StyleSheet.create({
-  closeBtn: {
+  backBtnView: {
+    width: 50,
+    height: 50,
+    marginTop: 30,
+    marginLeft: 15,
+    padding: 10
+  },
+  backBtn: {
     width: 20,
-    height: 20,
-    marginTop: 50,
-    marginLeft: 15
+    height: 20
   },
   mainTitle: {
-    width: 250,
+    width: 240,
     alignSelf: 'center',
     fontSize: 40,
-    marginTop: -35,
+    marginTop: -55,
     marginBottom: 25,
     textAlign: 'center'
   },
