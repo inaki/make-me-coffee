@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+const dismissKeyboard = require('dismissKeyboard');
 
 import ChemexImg from './ChemexImg';
 import FrenchImg from './FrenchImg';
@@ -13,6 +14,7 @@ import {
   Image,
   TabBarIOS,
   TouchableHighlight,
+  TouchableWithoutFeedback,
   View
 } from 'react-native';
 
@@ -20,7 +22,7 @@ class CoffeTabs extends Component {
   constructor() {
     super();
     this.state = {
-      selectedTab: 'frenchTab',
+      selectedTab: 'chemexTab',
       ounces: '0',
       firstPour: '',
       water: '',
@@ -86,20 +88,23 @@ class CoffeTabs extends Component {
           selected={this.state.selectedTab === 'frenchTab'}
           onPress={ () => {this.setTab('frenchTab'); this.resetValues(); this.clearText();} }>
           <View style={styles.tabContent}>
-            <View style={styles.whole}>
-              <View style={styles.infoBtn}>
-              <TouchableHighlight onPress={() => this.props.navigator.push({id: 'info'})}>
-                <Image style={styles.btn} source={require('./img/mugIcon.png')}/>
-              </TouchableHighlight>
+            <TouchableWithoutFeedback onPress={dismissKeyboard}>
+              <View style={styles.whole}>
+                <View style={styles.infoBtn}>
+                <TouchableHighlight onPress={() => this.props.navigator.push({id: 'info'})}>
+                  <Image style={styles.btn} source={require('./img/mugIcon.png')}/>
+                </TouchableHighlight>
+                </View>
+                <View style={styles.greenCircle}>
+                  <FrenchImg fill={this.state.fill}/>
+                  <OuncesInput valsChange={this.setValues} clearThis={component => this._textInput = component}/>
+                </View>
+                <View style={styles.instructions} >
+                  <Instructions fill={this.state.fill} grains={this.state.grains} water={this.state.water}/>
+                </View>
               </View>
-              <View style={styles.greenCircle}>
-                <FrenchImg fill={this.state.fill}/>
-                <OuncesInput valsChange={this.setValues} clearThis={component => this._textInput = component}/>
-              </View>
-              <View style={styles.instructions} >
-                <Instructions grains={this.state.grains} water={this.state.water}/>
-              </View>
-            </View>
+            </TouchableWithoutFeedback>
+
           </View>
         </TabBarIOS.Item>
 
@@ -109,20 +114,22 @@ class CoffeTabs extends Component {
           selected={this.state.selectedTab === 'chemexTab'}
           onPress={ () => {this.setTab('chemexTab'); this.resetValues(); this.clearText();} }>
           <View style={styles.tabContent}>
-            <View style={styles.whole}>
-              <View style={styles.infoBtn}>
-                <TouchableHighlight onPress={() => this.props.navigator.push({id: 'info'})}>
-                  <Image style={styles.btn} source={require('./img/mugIcon.png')}/>
-                </TouchableHighlight>
+            <TouchableWithoutFeedback onPress={dismissKeyboard}>
+              <View style={styles.whole}>
+                <View style={styles.infoBtn}>
+                  <TouchableHighlight onPress={() => this.props.navigator.push({id: 'info'})}>
+                    <Image style={styles.btn} source={require('./img/mugIcon.png')}/>
+                  </TouchableHighlight>
+                </View>
+                <View style={styles.greenCircle}>
+                  <ChemexImg fill={this.state.fill}/>
+                  <OuncesInput valsChange={this.setValues} clearThis={component => this._textInput = component}/>
+                </View>
+                <View style={styles.instructions} >
+                  <Instructions fill={this.state.fill} grains={this.state.grains} water={this.state.water}/>
+                </View>
               </View>
-              <View style={styles.greenCircle}>
-                <ChemexImg fill={this.state.fill}/>
-                <OuncesInput valsChange={this.setValues} clearThis={component => this._textInput = component}/>
-              </View>
-              <View style={styles.instructions} >
-                <Instructions grains={this.state.grains} water={this.state.water}/>
-              </View>
-            </View>
+            </TouchableWithoutFeedback>
           </View>
         </TabBarIOS.Item>
 
@@ -132,20 +139,22 @@ class CoffeTabs extends Component {
           selected={this.state.selectedTab === 'dripTab'}
           onPress={ () => {this.setTab('dripTab'); this.resetValues(); this.clearText();} }>
           <View style={styles.tabContent}>
-            <View style={styles.whole}>
-              <View style={styles.infoBtn}>
-              <TouchableHighlight onPress={() => this.props.navigator.push({id: 'info'})}>
-                <Image style={styles.btn} source={require('./img/mugIcon.png')}/>
-              </TouchableHighlight>
+            <TouchableWithoutFeedback onPress={dismissKeyboard}>
+              <View style={styles.whole}>
+                <View style={styles.infoBtn}>
+                <TouchableHighlight onPress={() => this.props.navigator.push({id: 'info'})}>
+                  <Image style={styles.btn} source={require('./img/mugIcon.png')}/>
+                </TouchableHighlight>
+                </View>
+                <View style={styles.greenCircle}>
+                  <DripImg fill={this.state.fill}/>
+                  <OuncesInput valsChange={this.setValues} clearThis={component => this._textInput = component}/>
+                </View>
+                <View style={styles.instructions} >
+                  <Instructions fill={this.state.fill} grains={this.state.grains} water={this.state.water}/>
+                </View>
               </View>
-              <View style={styles.greenCircle}>
-                <DripImg fill={this.state.fill}/>
-                <OuncesInput valsChange={this.setValues} clearThis={component => this._textInput = component}/>
-              </View>
-              <View style={styles.instructions} >
-                <Instructions grains={this.state.grains} water={this.state.water}/>
-              </View>
-            </View>
+            </TouchableWithoutFeedback>
           </View>
         </TabBarIOS.Item>
 

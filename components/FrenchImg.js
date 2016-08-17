@@ -1,18 +1,17 @@
 import React, {Component} from 'react';
+const dismissKeyboard = require('dismissKeyboard');
 
 import {
   Image,
   View,
   StyleSheet,
+  TouchableWithoutFeedback,
   LayoutAnimation
 } from 'react-native';
 
 class FrenchImg extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      index: 0
-    }
   }
 
   componentWillUpdate() {
@@ -22,12 +21,14 @@ class FrenchImg extends Component {
   render() {
     const marTop = this.props.fill === true ? {marginTop: 0} : {marginTop: 40};
     return  (
-      <View>
-        <Image style={styles.device} source={require(`./img/frenchEmpty.png`)}/>
-        <View style={styles.tank}>
-          <View style={[marTop, styles.fill]}></View>
-        </View>
-      </View>
+      <TouchableWithoutFeedback onPress={dismissKeyboard}>
+          <View>
+              <Image style={styles.device} source={require(`./img/frenchEmpty.png`)}/>
+              <View style={styles.tank}>
+                <View style={[marTop, styles.fill]}></View>
+              </View>
+          </View>
+      </TouchableWithoutFeedback>
     );
   }
 }

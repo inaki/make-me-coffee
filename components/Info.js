@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import {
   ScrollView,
-  TouchableHighlight,
+  TouchableWithoutFeedback,
   Text,
   View,
   Image,
@@ -14,9 +14,9 @@ class Info extends Component {
     return (
       <ScrollView style={styles.infoContent}>
 
-      <TouchableHighlight style={styles.button} onPress={() => this.props.navigator.pop()}>
+      <TouchableWithoutFeedback style={styles.button} onPress={() => this.props.navigator.pop()}>
         <Image style={styles.closeBtn} source={require('./img/backBtn.png')}/>
-      </TouchableHighlight>
+      </TouchableWithoutFeedback>
 
         <Text style={styles.mainTitle}> Brewing Info </Text>
 

@@ -19,7 +19,7 @@ class OuncesInput extends Component {
           autoFocus={false}
           autoCorrect={false}
           onBlur={() => dismissKeyboard() }
-          keyboardType='numeric'
+          keyboardType='number-pad'
           style={styles.textInput}
           onChangeText={this.props.valsChange}
           placeholder='0'
