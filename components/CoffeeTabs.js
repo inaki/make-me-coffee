@@ -23,7 +23,6 @@ class CoffeTabs extends Component {
     this.state = {
       selectedTab: 'chemexTab',
       ounces: '0',
-      firstPour: '',
       water: '',
       grains: '',
       fill: false
@@ -61,11 +60,10 @@ class CoffeTabs extends Component {
   setValues = (ounces) => {
     ounces = ounces;
     let coffeeGrams = this.ouncesToGrams(ounces);
-    grains = this.howMuchGrains(coffeeGrams) + 'g of coffee';
-    firstPour = (this.howMuchGrains(coffeeGrams) * 2) + 'g first pour';
-    water = this.howMuchWater(coffeeGrams) + 'g of water';
+    grains = this.howMuchGrains(coffeeGrams);
+    water = this.howMuchWater(coffeeGrams);
     fill = true;
-    this.setState({ounces, firstPour, water, grains, fill});
+    this.setState({ounces, water, grains, fill});
   }
 
   resetValues = () => {
@@ -96,7 +94,7 @@ class CoffeTabs extends Component {
                 </View>
                 <View style={styles.greenCircle}>
                   <FrenchImg fill={this.state.fill}/>
-                  <OuncesInput valsChange={this.setValues} clearThis={component => this._textInput = component}/>
+                  <OuncesInput ounces={this.state.ounces} valsChange={this.setValues} clearThis={component => this._textInput = component}/>
                 </View>
                 <View style={styles.instructions} >
                   <Instructions fill={this.state.fill} grains={this.state.grains} water={this.state.water}/>
@@ -122,7 +120,7 @@ class CoffeTabs extends Component {
                 </View>
                 <View style={styles.greenCircle}>
                   <ChemexImg fill={this.state.fill}/>
-                  <OuncesInput valsChange={this.setValues} clearThis={component => this._textInput = component}/>
+                  <OuncesInput ounces={this.state.ounces} valsChange={this.setValues} clearThis={component => this._textInput = component}/>
                 </View>
                 <View style={styles.instructions} >
                   <Instructions fill={this.state.fill} grains={this.state.grains} water={this.state.water}/>
@@ -147,7 +145,7 @@ class CoffeTabs extends Component {
                 </View>
                 <View style={styles.greenCircle}>
                   <DripImg fill={this.state.fill}/>
-                  <OuncesInput valsChange={this.setValues} clearThis={component => this._textInput = component}/>
+                  <OuncesInput ounces={this.state.ounces} valsChange={this.setValues} clearThis={component => this._textInput = component}/>
                 </View>
                 <View style={styles.instructions} >
                   <Instructions fill={this.state.fill} grains={this.state.grains} water={this.state.water}/>

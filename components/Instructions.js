@@ -19,12 +19,18 @@ class Instructions extends Component {
   }
 
   render() {
-    const showStyle = this.props.fill === true ? {marginTop: 0} : {marginTop: 40};
+    const instructionStyle = this.props.fill === true ? {marginTop: 0} : {marginTop: 40};
+    const instructionTextStyle = this.props.fill === true ? {color: 'black'} : {color: 'transparent'};
+    const questionStyle = this.props.fill === false ? {marginTop: -20} : {position: 'absolute'};
+    const questionTextStyle = this.props.fill === false ? {} : {color: 'transparent'};
     return (
       <TouchableWithoutFeedback onPress={dismissKeyboard}>
-        <View style={[showStyle, styles.instructions]}>
-          <Text style={styles.instructionsText}>{this.props.grains}</Text>
-          <Text style={styles.instructionsText}>{this.props.water}</Text>
+        <View style={instructionStyle}>
+          <View style={questionStyle}>
+            <Text style={[questionTextStyle,styles.questionText]}>How much <Text style={styles.boldFont}>Coffee</Text> do you want?</Text>
+          </View>
+          <Text style={[instructionTextStyle, styles.instructionsText]}>{this.props.grains}g<Text style={styles.lightFont}> of coffee</Text></Text>
+          <Text style={[instructionTextStyle, styles.instructionsText]}>{this.props.water}g<Text style={styles.lightFont}> of water</Text></Text>
         </View>
       </TouchableWithoutFeedback>
     );
@@ -32,12 +38,25 @@ class Instructions extends Component {
 }
 
 const styles = StyleSheet.create({
-  instructions: {
+  questionText: {
+    alignSelf: 'center',
+    textAlign: 'center',
+    fontFamily: 'Avenir Next',
+    width: 200,
+    fontSize: 30
   },
   instructionsText: {
     textAlign: 'center',
+    fontWeight: '600',
+    fontFamily: 'Avenir Next',
     fontSize: 28,
     lineHeight: 42
+  },
+  lightFont: {
+    fontWeight: 'normal'
+  },
+  boldFont: {
+    fontWeight: '600'
   }
 });
 
