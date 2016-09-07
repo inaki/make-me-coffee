@@ -6,4 +6,5 @@ dependencies: \
   ../../React/Base/RCTJavaScriptLoader.h \
   ../../React/Base/RCTBridgeModule.h ../../React/Base/RCTDefines.h \
   ../../React/Base/RCTFrameUpdate.h ../../React/Base/RCTInvalidating.h \
-  ../../React/Base/RCTEventDispatcher.h ../../React/Base/RCTUtils.h
+  ../../React/Base/RCTEventDispatcher.h ../../React/Base/RCTUtils.h \
+  ../../React/Base/RCTAssert.h

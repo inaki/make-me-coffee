@@ -29,7 +29,7 @@ class Info extends Component {
               Chemex
             </Text>
             <Text style={styles.description}>
-              The Chemex is a pour-over method for making coffee. For using a chemex, first you wet the filter, then add your grounds. Use a little bit of water to pour on the grounds to let them bloom. This releases the CO2. After about 60 seconds or you notice the air is no longer releasing, add the rest of the water to the grounds, wetting evenly.
+              The Chemex is a pour-over method for making coffee. To use, first wet your filter, then add your grounds. Discard the water used to wet the filter. Pour a little bit of water on the grounds to let them ‘bloom’. This releases the CO2. After about 60 seconds, when you notice the air is released, add the rest of the water to the grounds, wetting them evenly.
             </Text>
           </View>
         </View>
@@ -37,10 +37,10 @@ class Info extends Component {
         <View style={styles.deviceContent}>
           <View style={styles.textContent}>
             <Text style={styles.titleText}>
-              Chemex
+              French Press
             </Text>
             <Text style={styles.description}>
-              The Chemex is a pour-over method for making coffee. For using a chemex, first you wet the filter, then add your grounds. Use a little bit of water to pour on the grounds to let them bloom. This releases the CO2. After about 60 seconds or you notice the air is no longer releasing, add the rest of the water to the grounds, wetting evenly.
+              The French Press (or press pot) is an immersion brewing method. To brew, first pour some hot water into the French Press to warm it up. Then add your coarsely ground coffee. Add about 10% of the total amount of water on the grounds to let them bloom for a few seconds. Stir, and then add the rest of the water. Press the plunger until the grounds are submerged. Let the coffee steep for 3:45 - 4:00 minutes until pressing the plunger all the way and serving your coffee.
             </Text>
           </View>
           <Image style={styles.deviceFrench} source={require('./img/frenchFull.png')}/>
@@ -50,10 +50,10 @@ class Info extends Component {
           <Image style={styles.deviceDrip} source={require('./img/dripFull.png')}/>
           <View style={styles.textContent}>
             <Text style={styles.titleText}>
-              Chemex
+              Drip Machine
             </Text>
             <Text style={styles.description}>
-              The Chemex is a pour-over method for making coffee. For using a chemex, first you wet the filter, then add your grounds. Use a little bit of water to pour on the grounds to let them bloom. This releases the CO2. After about 60 seconds or you notice the air is no longer releasing, add the rest of the water to the grounds, wetting evenly.
+              Auto-Drip coffee is a drip brew method, which is similar to pour-over, except automated. To get the best cup of coffee with an auto-drip coffee maker, use fresh coffee and grind it to fine or medium grain right before you make it, with a burr grinder. Filtered water will also improve your cup. In general you want to do 1 or 2 tablespoons of ground coffee per six ounces of water. Depending on your taste, you may want to increase or decrease these amounts.
             </Text>
           </View>
         </View>
@@ -99,7 +99,9 @@ const styles = StyleSheet.create({
     fontSize: 24,
     marginBottom: 16
   },
-  description: {},
+  description: {
+    textAlign: 'justify'
+  },
   deviceChemex: {
     width: 85,
     height: 140,

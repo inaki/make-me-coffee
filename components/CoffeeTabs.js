@@ -40,14 +40,14 @@ class CoffeTabs extends Component {
   howMuchGrains = (grams) => {
     // how much grains you need for the coffee you want
     // values are in ounces
-    var grains = grams * 0.0875;
+    var grains = grams * 0.07642698;
     return Math.round(grains);
   }
 
   howMuchWater = (grams) => {
     // how much grains you need for the coffee you want
     // values are in ouces
-    var water = grams * 1.41666;
+    var water = grams * 1.21989218;
     return Math.round(water);
   }
 

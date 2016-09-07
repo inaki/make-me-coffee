@@ -27,7 +27,7 @@ class Instructions extends Component {
       <TouchableWithoutFeedback onPress={dismissKeyboard}>
         <View style={instructionStyle}>
           <View style={questionStyle}>
-            <Text style={[questionTextStyle,styles.questionText]}>How much <Text style={styles.boldFont}>Coffee</Text> do you want?</Text>
+            <Text style={[questionTextStyle,styles.questionText]}>How much Coffee do you want?</Text>
           </View>
           <Text style={[instructionTextStyle, styles.instructionsText]}>{this.props.grains}g<Text style={styles.lightFont}> of coffee</Text></Text>
           <Text style={[instructionTextStyle, styles.instructionsText]}>{this.props.water}g<Text style={styles.lightFont}> of water</Text></Text>

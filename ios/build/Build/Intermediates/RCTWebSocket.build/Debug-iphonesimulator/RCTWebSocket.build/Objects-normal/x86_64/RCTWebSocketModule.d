@@ -1,12 +1,12 @@
 dependencies: \
-  /Users/inaki/Desktop/sandbox/react-stuff/coffeeApp/node_modules/react-native/Libraries/WebSocket/RCTWebSocketModule.m \
-  /Users/inaki/Desktop/sandbox/react-stuff/coffeeApp/node_modules/react-native/Libraries/WebSocket/RCTWebSocketModule.h \
+  /Users/inaki/Desktop/sandbox/react-native/coffeeApp/node_modules/react-native/Libraries/WebSocket/RCTWebSocketModule.m \
+  /Users/inaki/Desktop/sandbox/react-native/coffeeApp/node_modules/react-native/Libraries/WebSocket/RCTWebSocketModule.h \
   ../../React/Modules/RCTEventEmitter.h ../../React/Base/RCTBridge.h \
   ../../React/Base/RCTBridgeDelegate.h \
   ../../React/Base/RCTJavaScriptLoader.h \
   ../../React/Base/RCTBridgeModule.h ../../React/Base/RCTDefines.h \
   ../../React/Base/RCTFrameUpdate.h ../../React/Base/RCTInvalidating.h \
-  /Users/inaki/Desktop/sandbox/react-stuff/coffeeApp/node_modules/react-native/Libraries/WebSocket/RCTSRWebSocket.h \
+  /Users/inaki/Desktop/sandbox/react-native/coffeeApp/node_modules/react-native/Libraries/WebSocket/RCTSRWebSocket.h \
   ../../React/Base/RCTConvert.h ../../React/CSSLayout/CSSLayout.h \
   ../../React/CSSLayout/CSSMacros.h ../../React/Views/RCTAnimationType.h \
   ../../React/Views/RCTBorderStyle.h \

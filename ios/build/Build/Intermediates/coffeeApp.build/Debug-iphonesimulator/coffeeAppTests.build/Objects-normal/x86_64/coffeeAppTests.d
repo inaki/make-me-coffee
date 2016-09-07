@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/inaki/Desktop/sandbox/react-stuff/coffeeApp/ios/coffeeAppTests/coffeeAppTests.m \
+  /Users/inaki/Desktop/sandbox/react-native/coffeeApp/ios/coffeeAppTests/coffeeAppTests.m \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Modules/module.modulemap \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIRemote.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework/Headers/XCUIKeyboardKeys.h \

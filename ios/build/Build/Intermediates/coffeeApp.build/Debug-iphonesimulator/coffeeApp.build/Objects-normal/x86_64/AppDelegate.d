@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/inaki/Desktop/sandbox/react-stuff/coffeeApp/ios/coffeeApp/AppDelegate.m \
-  /Users/inaki/Desktop/sandbox/react-stuff/coffeeApp/ios/coffeeApp/AppDelegate.h \
+  /Users/inaki/Desktop/sandbox/react-native/coffeeApp/ios/coffeeApp/AppDelegate.m \
+  /Users/inaki/Desktop/sandbox/react-native/coffeeApp/ios/coffeeApp/AppDelegate.h \
   ../node_modules/react-native/React/Base/RCTBundleURLProvider.h \
   ../node_modules/react-native/React/Base/RCTRootView.h \
   ../node_modules/react-native/React/Base/RCTBridge.h \

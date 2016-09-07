@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/inaki/Desktop/sandbox/react-stuff/coffeeApp/node_modules/react-native/Libraries/Text/RCTTextField.m \
-  /Users/inaki/Desktop/sandbox/react-stuff/coffeeApp/node_modules/react-native/Libraries/Text/RCTTextField.h \
+  /Users/inaki/Desktop/sandbox/react-native/coffeeApp/node_modules/react-native/Libraries/Text/RCTTextField.m \
+  /Users/inaki/Desktop/sandbox/react-native/coffeeApp/node_modules/react-native/Libraries/Text/RCTTextField.h \
   ../../React/Views/RCTComponent.h ../../React/Base/RCTConvert.h \
   ../../React/CSSLayout/CSSLayout.h ../../React/CSSLayout/CSSMacros.h \
   ../../React/Views/RCTAnimationType.h \
