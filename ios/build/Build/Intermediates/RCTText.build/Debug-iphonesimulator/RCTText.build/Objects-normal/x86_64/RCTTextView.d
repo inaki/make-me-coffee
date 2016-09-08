@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/inaki/Desktop/sandbox/react-native/coffeeApp/node_modules/react-native/Libraries/Text/RCTTextView.m \
-  /Users/inaki/Desktop/sandbox/react-native/coffeeApp/node_modules/react-native/Libraries/Text/RCTTextView.h \
+  /Users/inaki/Desktop/sandbox/react-native/makeMeCoffee/node_modules/react-native/Libraries/Text/RCTTextView.m \
+  /Users/inaki/Desktop/sandbox/react-native/makeMeCoffee/node_modules/react-native/Libraries/Text/RCTTextView.h \
   ../../React/Views/RCTView.h ../../React/Views/RCTBorderStyle.h \
   ../../React/Views/RCTComponent.h ../../React/Views/RCTPointerEvents.h \
   ../../React/Views/UIView+React.h ../../React/Base/RCTConvert.h \
@@ -13,7 +13,7 @@ dependencies: \
   ../../React/Base/RCTJavaScriptLoader.h \
   ../../React/Base/RCTBridgeModule.h ../../React/Base/RCTFrameUpdate.h \
   ../../React/Base/RCTInvalidating.h \
-  /Users/inaki/Desktop/sandbox/react-native/coffeeApp/node_modules/react-native/Libraries/Text/RCTShadowText.h \
+  /Users/inaki/Desktop/sandbox/react-native/makeMeCoffee/node_modules/react-native/Libraries/Text/RCTShadowText.h \
   ../../React/Views/RCTShadowView.h ../../React/Base/RCTRootView.h \
-  /Users/inaki/Desktop/sandbox/react-native/coffeeApp/node_modules/react-native/Libraries/Text/RCTText.h \
+  /Users/inaki/Desktop/sandbox/react-native/makeMeCoffee/node_modules/react-native/Libraries/Text/RCTText.h \
   ../../React/Base/RCTUtils.h

@@ -9,7 +9,7 @@ import {
   View
 } from 'react-native';
 
-class coffeeApp extends Component {
+class makeMeCoffee extends Component {
   renderScene(route, navigator) {
     switch (route.id) {
       case 'tab-bar':
@@ -34,4 +34,4 @@ class coffeeApp extends Component {
   }
 }
 
-AppRegistry.registerComponent('coffeeApp', () => coffeeApp);
+AppRegistry.registerComponent('makeMeCoffee', () => makeMeCoffee);

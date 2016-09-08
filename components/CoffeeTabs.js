@@ -5,6 +5,7 @@ import ChemexImg from './ChemexImg';
 import FrenchImg from './FrenchImg';
 import DripImg from './DripImg';
 import OuncesInput from './OuncesInput';
+import CupsInput from './CupsInput';
 import Instructions from './Instructions';
 
 import {
@@ -59,6 +60,15 @@ class CoffeTabs extends Component {
 
   setValues = (ounces) => {
     ounces = ounces;
+    let coffeeGrams = this.ouncesToGrams(ounces);
+    grains = this.howMuchGrains(coffeeGrams);
+    water = this.howMuchWater(coffeeGrams);
+    fill = true;
+    this.setState({ounces, water, grains, fill});
+  }
+
+  setCups = (cups) => {
+    ounces = 6 * cups;
     let coffeeGrams = this.ouncesToGrams(ounces);
     grains = this.howMuchGrains(coffeeGrams);
     water = this.howMuchWater(coffeeGrams);
@@ -145,7 +155,7 @@ class CoffeTabs extends Component {
                 </View>
                 <View style={styles.greenCircle}>
                   <DripImg fill={this.state.fill}/>
-                  <OuncesInput ounces={this.state.ounces} valsChange={this.setValues} clearThis={component => this._textInput = component}/>
+                  <CupsInput ounces={this.state.ounces} valsChange={this.setCups} clearThis={component => this._textInput = component}/>
                 </View>
                 <View style={styles.instructions} >
                   <Instructions fill={this.state.fill} grains={this.state.grains} water={this.state.water}/>

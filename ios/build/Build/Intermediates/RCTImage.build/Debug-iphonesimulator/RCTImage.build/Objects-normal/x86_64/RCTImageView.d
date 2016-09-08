@@ -1,7 +1,7 @@
 dependencies: \
-  /Users/inaki/Desktop/sandbox/react-native/coffeeApp/node_modules/react-native/Libraries/Image/RCTImageView.m \
-  /Users/inaki/Desktop/sandbox/react-native/coffeeApp/node_modules/react-native/Libraries/Image/RCTImageView.h \
-  /Users/inaki/Desktop/sandbox/react-native/coffeeApp/node_modules/react-native/Libraries/Image/RCTResizeMode.h \
+  /Users/inaki/Desktop/sandbox/react-native/makeMeCoffee/node_modules/react-native/Libraries/Image/RCTImageView.m \
+  /Users/inaki/Desktop/sandbox/react-native/makeMeCoffee/node_modules/react-native/Libraries/Image/RCTImageView.h \
+  /Users/inaki/Desktop/sandbox/react-native/makeMeCoffee/node_modules/react-native/Libraries/Image/RCTResizeMode.h \
   ../../React/Base/RCTConvert.h ../../React/CSSLayout/CSSLayout.h \
   ../../React/CSSLayout/CSSMacros.h ../../React/Views/RCTAnimationType.h \
   ../../React/Views/RCTBorderStyle.h \
@@ -13,11 +13,11 @@ dependencies: \
   ../../React/Base/RCTBridgeModule.h ../../React/Base/RCTFrameUpdate.h \
   ../../React/Base/RCTInvalidating.h \
   ../../React/Base/RCTEventDispatcher.h \
-  /Users/inaki/Desktop/sandbox/react-native/coffeeApp/node_modules/react-native/Libraries/Image/RCTImageLoader.h \
+  /Users/inaki/Desktop/sandbox/react-native/makeMeCoffee/node_modules/react-native/Libraries/Image/RCTImageLoader.h \
   ../../React/Base/RCTURLRequestHandler.h \
   ../../React/Base/RCTURLRequestDelegate.h \
   ../../React/Base/RCTImageSource.h \
-  /Users/inaki/Desktop/sandbox/react-native/coffeeApp/node_modules/react-native/Libraries/Image/RCTImageUtils.h \
+  /Users/inaki/Desktop/sandbox/react-native/makeMeCoffee/node_modules/react-native/Libraries/Image/RCTImageUtils.h \
   ../../React/Base/RCTUtils.h \
-  /Users/inaki/Desktop/sandbox/react-native/coffeeApp/node_modules/react-native/Libraries/Image/RCTImageBlurUtils.h \
+  /Users/inaki/Desktop/sandbox/react-native/makeMeCoffee/node_modules/react-native/Libraries/Image/RCTImageBlurUtils.h \
   ../../React/Views/UIView+React.h ../../React/Views/RCTComponent.h

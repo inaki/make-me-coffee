@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/inaki/Desktop/sandbox/react-native/coffeeApp/node_modules/react-native/Libraries/LinkingIOS/RCTLinkingManager.m \
-  /Users/inaki/Desktop/sandbox/react-native/coffeeApp/node_modules/react-native/Libraries/LinkingIOS/RCTLinkingManager.h \
+  /Users/inaki/Desktop/sandbox/react-native/makeMeCoffee/node_modules/react-native/Libraries/LinkingIOS/RCTLinkingManager.m \
+  /Users/inaki/Desktop/sandbox/react-native/makeMeCoffee/node_modules/react-native/Libraries/LinkingIOS/RCTLinkingManager.h \
   ../../React/Modules/RCTEventEmitter.h ../../React/Base/RCTBridge.h \
   ../../React/Base/RCTBridgeDelegate.h \
   ../../React/Base/RCTJavaScriptLoader.h \

@@ -1,25 +1,14 @@
 {
-  "name": "coffeeApp",
+  "name": "makeMeCoffee",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "flow": "flow; test $? -eq 0 -o $? -eq 2"
+    "bundle": "react-native bundle --platform ios --entry-file index.ios.js --bundle-output ./release/main.jsbundle --assets-dest ./release --dev false"
   },
   "dependencies": {
-    "react": "15.2.1",
-    "react-motion": "^0.4.4",
-    "react-native": "0.31.0",
+    "react": "15.3.1",
+    "react-native": "0.32.1",
     "react-native-code-push": "^1.14.6-beta"
-  },
-  "devDependencies": {
-    "babel-eslint": "^6.1.2",
-    "eslint": "^2.13.1",
-    "eslint-config-airbnb": "^10.0.0",
-    "eslint-plugin-babel": "^3.3.0",
-    "eslint-plugin-import": "^1.12.0",
-    "eslint-plugin-jsx-a11y": "^2.0.1",
-    "eslint-plugin-react": "^6.0.0",
-    "flow-bin": "^0.28.0"
   }
 }
